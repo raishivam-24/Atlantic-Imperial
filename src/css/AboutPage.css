@@ -1,6 +1,18 @@
 /* ===========================
    ABOUT HERO
 =========================== */
+*{
+  box-sizing:border-box;
+}
+
+html,
+body,
+#root{
+  margin:0;
+  padding:0;
+  width:100%;
+  overflow-x:hidden;
+}
 
 .about-hero{
   position:relative;
@@ -443,4 +455,95 @@
     word-break:break-word;
   }
 
+}
+/* ===========================
+   MOBILE FIX
+=========================== */
+
+@media (max-width:768px){
+
+  html,
+  body,
+  #root{
+    overflow-x:hidden;
+  }
+
+  .about-container{
+    width:92%;
+  }
+
+  .about-hero{
+    min-height:auto;
+    padding:120px 0 60px;
+  }
+
+  .about-hero-content{
+    padding:0 20px;
+    max-width:100%;
+  }
+
+  .about-hero-title{
+    font-size:48px;
+    line-height:1.1;
+    word-break:break-word;
+  }
+
+  .about-hero-text{
+    font-size:15px;
+    line-height:1.8;
+  }
+
+  .about-intro{
+    padding:80px 0;
+  }
+
+  .about-intro-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .about-intro-image img{
+    height:auto;
+    width:100%;
+  }
+
+  .about-section-title{
+    font-size:40px;
+  }
+
+  .vision-section,
+  .stats-section,
+  .developer-section,
+  .rera-section{
+    padding:80px 0;
+  }
+
+  .vision-title,
+  .rera-title{
+    font-size:42px;
+  }
+
+  .vision-card{
+    padding:25px;
+  }
+
+  .developer-grid{
+    grid-template-columns:1fr;
+    gap:35px;
+  }
+
+  .developer-image img{
+    width:100%;
+    height:auto;
+  }
+
+  .rera-box{
+    padding:35px 20px;
+  }
+
+  .rera-number{
+    font-size:18px;
+    letter-spacing:1px;
+    word-break:break-word;
+  }
 }

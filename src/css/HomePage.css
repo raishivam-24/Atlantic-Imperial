@@ -8,6 +8,17 @@
 /* ───────────────────────────────────────────────
    HERO SECTION  (original — unchanged)
 ─────────────────────────────────────────────── */
+html,
+body,
+#root{
+  overflow-x:hidden;
+  width:100%;
+}
+
+*{
+  box-sizing:border-box;
+}
+
 .hero-section {
   position: relative;
   min-height: 100vh;
@@ -700,4 +711,67 @@
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(30px); }
   to   { opacity: 1; transform: translateY(0);    }
+}
+/* ===========================
+   MOBILE HERO FIX
+=========================== */
+
+@media (max-width:768px){
+
+  .hero-section{
+    min-height:auto;
+    padding:120px 0 60px;
+  }
+
+  .hero-content{
+    padding:0 20px;
+    max-width:100%;
+  }
+
+  .hero-title{
+    font-size:52px;
+    line-height:1;
+  }
+
+  .hero-buttons{
+    flex-direction:column;
+    gap:12px;
+  }
+
+  .hero-buttons a,
+  .hero-buttons button{
+    width:100%;
+  }
+
+  .hero-stats{
+    position:relative;
+
+    left:auto;
+    bottom:auto;
+
+    margin-top:35px;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:15px;
+  }
+
+  .hero-stat{
+    text-align:center;
+  }
+
+  .hero-stat-number{
+    font-size:32px;
+  }
+
+  .hero-stat-label{
+    font-size:10px;
+    letter-spacing:2px;
+  }
+
+  .scroll-indicator{
+    display:none;
+  }
 }

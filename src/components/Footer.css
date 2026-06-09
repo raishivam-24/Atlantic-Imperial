@@ -120,10 +120,44 @@
 
 @media(max-width:900px){
 
+  .footer{
+    text-align:center;
+  }
+
   .footer-container{
     grid-template-columns:1fr;
 
     gap:40px;
+
+    padding:50px 20px;
+  }
+
+  .footer-brand,
+  .footer-links,
+  .footer-contact{
+    width:100%;
+  }
+
+  .footer-description{
+    max-width:100%;
+  }
+
+  .footer-links{
+    align-items:center;
+  }
+
+  .footer-links button{
+    text-align:center;
+
+    width:auto;
+
+    margin-bottom:15px;
+
+    font-size:16px;
+  }
+
+  .footer-contact p{
+    text-align:center;
   }
 
   .footer-bottom{
@@ -132,5 +166,18 @@
     gap:10px;
 
     text-align:center;
+
+    padding:20px;
   }
+
+  .footer-logo{
+    font-size:34px;
+  }
+}
+.footer-links button{
+  padding:5px 0;
+}
+
+.footer-links button:hover{
+  transform:translateX(5px);
 }
