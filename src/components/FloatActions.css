@@ -1,0 +1,67 @@
+.float-actions{
+  position:fixed;
+
+  right:25px;
+  bottom:25px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:14px;
+
+  z-index:999;
+}
+
+.float-btn{
+  width:60px;
+  height:60px;
+
+  border:none;
+
+  border-radius:50%;
+
+  cursor:pointer;
+
+  font-size:22px;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  transition:.3s;
+
+  box-shadow:
+  0 10px 25px
+  rgba(0,0,0,.25);
+}
+
+.float-btn:hover{
+  transform:
+  translateY(-4px)
+  scale(1.05);
+}
+
+.call-btn{
+  background:#74c69d;
+  color:#0b1a0e;
+}
+
+.contact-btn{
+  background:#1b4332;
+  color:white;
+}
+
+@media(max-width:768px){
+
+  .float-btn{
+    width:54px;
+    height:54px;
+
+    font-size:20px;
+  }
+
+  .float-actions{
+    right:16px;
+    bottom:16px;
+  }
+}

@@ -1,0 +1,446 @@
+/* ===========================
+   ABOUT HERO
+=========================== */
+
+.about-hero{
+  position:relative;
+
+  min-height:70vh;
+
+  display:flex;
+  align-items:center;
+
+  background:
+  linear-gradient(
+    rgba(11,26,14,.88),
+    rgba(11,26,14,.88)
+  ),
+  url("https://raishivam-24.github.io/Atlantic_imperial/images/Front_View2.jpeg");
+
+  background-size:cover;
+  background-position:center;
+}
+
+.about-hero-overlay{
+  position:absolute;
+  inset:0;
+}
+
+.about-hero-content{
+  position:relative;
+  z-index:2;
+
+  max-width:900px;
+
+  padding-left:80px;
+}
+
+.about-hero-title{
+  font-family:
+  'Cormorant Garamond',serif;
+
+  font-size:
+  clamp(55px,8vw,100px);
+
+  font-weight:300;
+
+  line-height:1;
+
+  color:white;
+
+  margin-bottom:25px;
+}
+
+.about-hero-text{
+  max-width:650px;
+
+  line-height:1.9;
+
+  color:
+  rgba(232,240,233,.75);
+
+  font-size:16px;
+}
+
+/* ===========================
+   INTRO SECTION
+=========================== */
+
+.about-intro{
+  padding:120px 0;
+
+  background:#0b1a0e;
+}
+
+.about-container{
+  width:min(1400px,90%);
+  margin:auto;
+}
+
+.about-intro-grid{
+  display:grid;
+
+  grid-template-columns:
+  1.1fr 1fr;
+
+  gap:70px;
+
+  align-items:center;
+}
+
+.about-intro-image{
+  overflow:hidden;
+}
+
+.about-intro-image img{
+  width:100%;
+
+  height:650px;
+
+  object-fit:cover;
+}
+
+.about-intro-content{
+  max-width:600px;
+}
+
+.about-section-title{
+  font-family:
+  'Cormorant Garamond',serif;
+
+  font-size:
+  clamp(42px,5vw,68px);
+
+  font-weight:300;
+
+  color:white;
+
+  line-height:1.1;
+
+  margin-bottom:20px;
+}
+
+.about-divider{
+  width:70px;
+  height:2px;
+
+  background:#74c69d;
+
+  margin-bottom:30px;
+}
+
+.about-intro-content p{
+  color:
+  rgba(232,240,233,.72);
+
+  line-height:1.9;
+
+  margin-bottom:22px;
+}
+
+@media(max-width:1000px){
+
+  .about-hero-content{
+    padding:40px;
+  }
+
+  .about-intro-grid{
+    grid-template-columns:1fr;
+  }
+
+  .about-intro-image img{
+    height:450px;
+  }
+
+}
+/* ===========================
+   VISION SECTION
+=========================== */
+
+.vision-section{
+  padding:120px 0;
+
+  background:#112614;
+}
+
+.vision-header{
+  text-align:center;
+
+  margin-bottom:70px;
+}
+
+.vision-title{
+  font-family:
+  'Cormorant Garamond',serif;
+
+  font-size:
+  clamp(40px,5vw,68px);
+
+  font-weight:300;
+
+  color:white;
+
+  line-height:1.1;
+}
+
+.vision-divider{
+  width:70px;
+  height:2px;
+
+  background:#74c69d;
+
+  margin:25px auto 0;
+}
+
+.vision-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(3,1fr);
+
+  gap:30px;
+}
+
+.vision-card{
+  background:#14311a;
+
+  border:
+  1px solid rgba(82,183,136,.18);
+
+  padding:40px 30px;
+
+  text-align:center;
+
+  transition:.35s;
+}
+
+.vision-card:hover{
+  transform:
+  translateY(-10px);
+
+  border-color:#74c69d;
+}
+
+.vision-icon{
+  font-size:42px;
+
+  margin-bottom:20px;
+}
+
+.vision-card h3{
+  color:white;
+
+  margin-bottom:15px;
+
+  font-size:22px;
+}
+
+.vision-card p{
+  color:
+  rgba(232,240,233,.65);
+
+  line-height:1.8;
+}
+
+/* ===========================
+   STATS SECTION
+=========================== */
+
+.stats-section{
+  padding:100px 0;
+
+  background:#0b1a0e;
+}
+
+.stats-grid{
+  display:grid;
+
+  grid-template-columns:
+  repeat(4,1fr);
+
+  gap:30px;
+}
+
+.stat-box{
+  text-align:center;
+
+  padding:40px 20px;
+
+  border:
+  1px solid rgba(82,183,136,.15);
+
+  background:#14311a;
+}
+
+.stat-box h3{
+  font-family:
+  'Cormorant Garamond',serif;
+
+  font-size:56px;
+
+  font-weight:300;
+
+  color:#95d5b2;
+
+  margin-bottom:12px;
+}
+
+.stat-box span{
+  color:
+  rgba(232,240,233,.7);
+
+  letter-spacing:2px;
+
+  text-transform:uppercase;
+
+  font-size:12px;
+}
+
+@media(max-width:1000px){
+
+  .vision-grid{
+    grid-template-columns:1fr;
+  }
+
+  .stats-grid{
+    grid-template-columns:
+    repeat(2,1fr);
+  }
+
+}
+
+@media(max-width:600px){
+
+  .stats-grid{
+    grid-template-columns:1fr;
+  }
+
+}
+/* ===========================
+   DEVELOPER SECTION
+=========================== */
+
+.developer-section{
+  padding:120px 0;
+
+  background:#112614;
+}
+
+.developer-grid{
+  display:grid;
+
+  grid-template-columns:
+  1fr 1.1fr;
+
+  gap:70px;
+
+  align-items:center;
+}
+
+.developer-content p{
+  color:
+  rgba(232,240,233,.72);
+
+  line-height:1.9;
+
+  margin-bottom:20px;
+}
+
+.developer-image{
+  overflow:hidden;
+}
+
+.developer-image img{
+  width:100%;
+
+  height:550px;
+
+  object-fit:cover;
+}
+
+/* ===========================
+   RERA SECTION
+=========================== */
+
+.rera-section{
+  padding:120px 0;
+
+  background:#0b1a0e;
+}
+
+.rera-box{
+  max-width:900px;
+
+  margin:auto;
+
+  text-align:center;
+
+  padding:70px 40px;
+
+  border:
+  1px solid rgba(82,183,136,.18);
+
+  background:#14311a;
+}
+
+.rera-title{
+  font-family:
+  'Cormorant Garamond',serif;
+
+  font-size:
+  clamp(40px,5vw,68px);
+
+  font-weight:300;
+
+  color:white;
+
+  margin-bottom:20px;
+}
+
+.rera-number{
+  font-size:28px;
+
+  font-weight:700;
+
+  color:#95d5b2;
+
+  letter-spacing:2px;
+
+  margin-bottom:25px;
+}
+
+.rera-text{
+  color:
+  rgba(232,240,233,.72);
+
+  line-height:1.9;
+
+  max-width:700px;
+
+  margin:auto;
+}
+
+@media(max-width:1000px){
+
+  .developer-grid{
+    grid-template-columns:1fr;
+  }
+
+  .developer-image img{
+    height:420px;
+  }
+
+}
+
+@media(max-width:700px){
+
+  .rera-box{
+    padding:50px 25px;
+  }
+
+  .rera-number{
+    font-size:20px;
+    word-break:break-word;
+  }
+
+}
